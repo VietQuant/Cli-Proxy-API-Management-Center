@@ -106,13 +106,15 @@
     "plugin_store": "Магазин плагинов",
     "config_management": "Панель конфигурации",
     "logs": "Просмотр логов",
-    "system_info": "Информация системы"
+    "system_info": "Информация системы",
+    "myproxy_quota": "Quota overview"
   },
   "nav_groups": {
     "operate": "Работа",
     "gateway": "Шлюз",
     "observe": "Наблюдение",
-    "control": "Управление"
+    "control": "Управление",
+    "myproxy": "My proxy"
   },
   "nav_meta": {
     "dashboard": "Обзор работы",
@@ -125,7 +127,8 @@
     "plugin_store": "Поиск и установка плагинов",
     "logs": "Трассировка запросов",
     "config_management": "Базовая конфигурация шлюза",
-    "system_info": "Состояние и диагностика"
+    "system_info": "Состояние и диагностика",
+    "myproxy_quota": "Remaining quota and reset credits"
   },
   "dashboard": {
     "hero_verdict_good": "Всё стабильно",
@@ -1809,6 +1812,34 @@
     },
     "modelCatalog": {
       "notLoaded": "Не загружено"
+    }
+  },
+  "myproxy": {
+    "quota": {
+      "title": "Quota overview",
+      "reload": "Reload",
+      "collect": "Refresh from provider",
+      "col_account": "Account",
+      "col_status": "Status",
+      "col_remaining": "Remaining",
+      "col_credits": "Reset credits",
+      "col_reset": "Resets at",
+      "col_observed": "Observed",
+      "col_actions": "Actions",
+      "reset_action": "Reset quota",
+      "reset_pending": "Not available yet: Home exposes no reset-credit endpoint.",
+      "used_label": "used {{value}}",
+      "credit_expires_in": "first expires in {{days}}d",
+      "no_credits": "no credits",
+      "reset_in_days": "in {{days}}d",
+      "detail_failed": "detail unavailable",
+      "load_failed": "Could not load quota data",
+      "empty": "No credentials reported",
+      "collect_queued": "Queued {{count}} credentials for collection",
+      "stat_credentials": "{{count}} credentials",
+      "stat_credits": "{{count}} reset credits",
+      "stat_expiring": "{{count}} expiring soon",
+      "generated_at": "Updated {{value}}"
     }
   }
 }

@@ -106,14 +106,16 @@
     "plugin_store": "插件商店",
     "config_management": "設定面板",
     "logs": "記錄檢視",
-    "system_info": "中心資訊"
+    "system_info": "中心資訊",
+    "myproxy_quota": "配額總覽"
   },
   "nav_groups": {
     "operate": "運行",
     "gateway": "閘道",
     "observe": "觀測",
     "plugin_pages": "插件",
-    "control": "控制"
+    "control": "控制",
+    "myproxy": "我的代理"
   },
   "nav_meta": {
     "dashboard": "運行總覽",
@@ -126,7 +128,8 @@
     "plugin_store": "探索並安裝插件",
     "logs": "請求追蹤與排查",
     "config_management": "閘道基礎設定",
-    "system_info": "運行與診斷資訊"
+    "system_info": "運行與診斷資訊",
+    "myproxy_quota": "剩餘配額與重置額度"
   },
   "dashboard": {
     "hero_verdict_good": "運行平穩",
@@ -1839,6 +1842,34 @@
     },
     "modelCatalog": {
       "notLoaded": "未載入"
+    }
+  },
+  "myproxy": {
+    "quota": {
+      "title": "配额总览",
+      "reload": "重新加载",
+      "collect": "从上游刷新",
+      "col_account": "账号",
+      "col_status": "状态",
+      "col_remaining": "剩余",
+      "col_credits": "重置额度",
+      "col_reset": "重置时间",
+      "col_observed": "采集于",
+      "col_actions": "操作",
+      "reset_action": "重置配额",
+      "reset_pending": "暂不可用：Home 未提供重置额度接口。",
+      "used_label": "已用 {{value}}",
+      "credit_expires_in": "最近 {{days}} 天后过期",
+      "no_credits": "无额度",
+      "reset_in_days": "{{days}} 天后",
+      "detail_failed": "详情不可用",
+      "load_failed": "无法加载配额数据",
+      "empty": "没有凭证",
+      "collect_queued": "已排入 {{count}} 个凭证",
+      "stat_credentials": "{{count}} 个凭证",
+      "stat_credits": "{{count}} 个重置额度",
+      "stat_expiring": "{{count}} 个即将过期",
+      "generated_at": "更新于 {{value}}"
     }
   }
 }

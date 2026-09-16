@@ -655,6 +655,19 @@ export function MainLayout() {
       ],
     },
     {
+      // Fork-local pages live in their own group so upstream nav changes stay mergeable.
+      id: 'myproxy',
+      labelKey: 'nav_groups.myproxy',
+      items: [
+        {
+          path: '/myproxy/quota',
+          labelKey: 'nav.myproxy_quota',
+          metaKey: 'nav_meta.myproxy_quota',
+          icon: sidebarIcons.quota,
+        },
+      ],
+    },
+    {
       id: 'control',
       labelKey: 'nav_groups.control',
       items: [
