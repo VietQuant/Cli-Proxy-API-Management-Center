@@ -1,0 +1,25 @@
+namespace: test
+name: myproxy-ui
+replicas: 1
+serviceDev: loc.nguyen
+
+service:
+  # nginx runs unprivileged in this image and cannot bind 80.
+  targetPort: 8080
+
+resources:
+  requests:
+    cpu: 0.01
+    memory: 64Mi
+  limits:
+    cpu: 0.2
+    memory: 256Mi
+
+env:
+- name: TZ
+  value: "Asia/Ho_Chi_Minh"
+
+ingress:
+  enabled: true
+  domain: myproxy-ui.office.picap.vn
+  path: /

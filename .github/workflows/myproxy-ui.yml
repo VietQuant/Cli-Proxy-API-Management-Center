@@ -1,0 +1,16 @@
+name: Frontend - myproxy-ui
+on: [push]
+
+jobs:
+  myproxy-ui-office:
+    # Deploys only when the commit message opts in, matching the convention the
+    # other VietQuant services use.
+    if: contains(github.event.head_commit.message, 'deploy-office-myproxy-ui')
+    uses: VietQuant/workflows/.github/workflows/standard-cicd.yml@main
+    with:
+      project: 'myproxy-ui/myproxy-ui'
+      module: "office/myproxy-ui"
+      cluster: "office"
+    secrets: inherit
+
+# | deploy-office-myproxy-ui |
