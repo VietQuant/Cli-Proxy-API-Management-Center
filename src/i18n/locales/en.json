@@ -106,16 +106,14 @@
     "plugin_store": "Plugin Store",
     "config_management": "Config Panel",
     "logs": "Logs Viewer",
-    "system_info": "Management Center Info",
-    "myproxy_quota": "Quota overview"
+    "system_info": "Management Center Info"
   },
   "nav_groups": {
     "operate": "Operate",
     "gateway": "Gateway",
     "observe": "Observe",
     "plugin_pages": "Plugins",
-    "control": "Control",
-    "myproxy": "My proxy"
+    "control": "Control"
   },
   "nav_meta": {
     "dashboard": "Operations overview",
@@ -128,8 +126,7 @@
     "plugin_store": "Discover & install plugins",
     "logs": "Request tracing",
     "config_management": "Gateway configuration",
-    "system_info": "Runtime & diagnostics",
-    "myproxy_quota": "Remaining quota and reset credits"
+    "system_info": "Runtime & diagnostics"
   },
   "dashboard": {
     "hero_verdict_good": "All systems steady",
@@ -1818,34 +1815,6 @@
     },
     "modelCatalog": {
       "notLoaded": "Not loaded"
-    }
-  },
-  "myproxy": {
-    "quota": {
-      "title": "Quota overview",
-      "reload": "Reload",
-      "collect": "Refresh from provider",
-      "col_account": "Account",
-      "col_status": "Status",
-      "col_remaining": "Remaining",
-      "col_credits": "Reset credits",
-      "col_reset": "Resets at",
-      "col_observed": "Observed",
-      "col_actions": "Actions",
-      "reset_action": "Reset quota",
-      "reset_pending": "Not available yet: Home exposes no reset-credit endpoint.",
-      "used_label": "used {{value}}",
-      "credit_expires_in": "first expires in {{days}}d",
-      "no_credits": "no credits",
-      "reset_in_days": "in {{days}}d",
-      "detail_failed": "detail unavailable",
-      "load_failed": "Could not load quota data",
-      "empty": "No credentials reported",
-      "collect_queued": "Queued {{count}} credentials for collection",
-      "stat_credentials": "{{count}} credentials",
-      "stat_credits": "{{count}} reset credits",
-      "stat_expiring": "{{count}} expiring soon",
-      "generated_at": "Updated {{value}}"
     }
   }
 }
