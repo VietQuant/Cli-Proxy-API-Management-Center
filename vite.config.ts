@@ -46,6 +46,18 @@ export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(getVersion())
   },
+  // Dev-only: without this the console resolves its API base from window.location,
+  // so `bun run dev` would call the Vite server itself and parse index.html as JSON.
+  // Point DEV_API_TARGET at a gateway to work against it locally.
+  server: {
+    proxy: {
+      '/v0': {
+        target: process.env.DEV_API_TARGET ?? 'http://127.0.0.1:8317',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
